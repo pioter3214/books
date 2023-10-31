@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr th:each="entry: ${author}">
+            <td>First name: </td>
+            <td th:text="${entry.first_name}">
+            <td>Last name: </td>
+            <td th:text="${entry.last_name}">
+            <td>Finances: </td>
+            <td th:text="${entry.finances}">
+            <td>Motivation: </td>
+            <td th:text="${entry.motivation}">
+            <td>Human behavior: </td>
+            <td th:text="${entry.human_behavior}">
+        </tr>
+    </table>
+</body>
+</html>
